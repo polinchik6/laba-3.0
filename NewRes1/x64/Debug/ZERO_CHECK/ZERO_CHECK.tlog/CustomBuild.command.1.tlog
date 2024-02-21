@@ -1,0 +1,10 @@
+^C:\USERS\ДНС\DESKTOP\REPO\LABA-3.0\NEWRES1\CMAKEFILES\0449A04BCDB6319E964258185349D6CF\GENERATE.STAMP.RULE
+setlocal
+C:\Users\ДНС\Downloads\cmake-3.28.3-windows-x86_64\cmake-3.28.3-windows-x86_64\bin\cmake.exe -SC:/Users/ДНС/Desktop/репозиторий/laba1111/CMake -BC:/Users/ДНС/Desktop/Repo/laba-3.0/NewRes1 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/ДНС/Desktop/Repo/laba-3.0/NewRes1/NewRes1.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
